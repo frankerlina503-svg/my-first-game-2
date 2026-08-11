@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Football Game Arena</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <div class="logo">⚽</div>
+      <div>
+        <h1>Football Game Arena</h1>
+        <p>Play fast matches, boost your stats, and become a league legend.</p>
+      </div>
+    </div>
+    <nav>
+      <a href="#play">Play</a>
+      <a href="#features">Features</a>
+      <a href="#scoreboard">Scoreboard</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <h2>Jump into a thrilling football challenge.</h2>
+        <p>Choose your teams, start a match, and let the stadium roar with every goal.</p>
+        <a class="btn-primary" href="#play">Start a Match</a>
+      </div>
+      <div class="hero-card">
+        <div class="match-preview">
+          <div class="team-card">
+            <span>Blue Wolves</span>
+            <strong>3</strong>
+          </div>
+          <div class="team-card">
+            <span>Red Strikers</span>
+            <strong>2</strong>
+          </div>
+        </div>
+        <p>Feel the action with instant match simulation and live score updates.</p>
+      </div>
+    </section>
+
+    <section id="play" class="play-section">
+      <div class="section-header">
+        <h2>Match Simulator</h2>
+        <p>Pick two teams, kick off, and watch the final score appear.</p>
+      </div>
+      <div class="play-grid">
+        <div class="play-panel">
+          <label for="homeTeam">Home Team</label>
+          <select id="homeTeam">
+            <option>Blue Wolves</option>
+            <option>Red Strikers</option>
+            <option>Golden Eagles</option>
+            <option>Shadow United</option>
+          </select>
+
+          <label for="awayTeam">Away Team</label>
+          <select id="awayTeam">
+            <option>Red Strikers</option>
+            <option>Blue Wolves</option>
+            <option>Golden Eagles</option>
+            <option>Shadow United</option>
+          </select>
+
+          <button id="startMatch" class="btn-primary">Kick Off</button>
+        </div>
+
+        <div class="score-panel" id="scoreboard">
+          <div class="score-header">
+            <h3>Live Score</h3>
+            <span id="matchStatus">Ready to play</span>
+          </div>
+          <div class="score-display">
+            <div class="score-team">
+              <strong id="homeScore">0</strong>
+              <span id="homeLabel">Blue Wolves</span>
+            </div>
+            <div class="score-vs">vs</div>
+            <div class="score-team">
+              <strong id="awayScore">0</strong>
+              <span id="awayLabel">Red Strikers</span>
+            </div>
+          </div>
+          <div class="match-highlights">
+            <h4>Match Highlights</h4>
+            <ul id="highlightList">
+              <li>Choose teams and press Kick Off to start.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="features-section">
+      <div class="feature-card">
+        <h3>Quick Matches</h3>
+        <p>Play instant one-minute match simulations with surprising results.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Smart Scoreboard</h3>
+        <p>See the final score and play-by-play highlights immediately.</p>
+      </div>
+      <div class="feature-card">
+        <h3>League Mood</h3>
+        <p>Track team reputation and feel the energy of every goal.</p>
+      </div>
+    </section>
+
+    <section class="stats-section">
+      <div>
+        <h2>Top Games</h2>
+        <p>Every match is a new chance to rewrite the standings.</p>
+      </div>
+      <div class="stats-grid">
+        <div class="stat-box">
+          <strong id="finalResult">0 - 0</strong>
+          <span>Most Recent Result</span>
+        </div>
+        <div class="stat-box">
+          <strong id="goalCount">0</strong>
+          <span>Total Goals</span>
+        </div>
+        <div class="stat-box">
+          <strong id="topTeam">-</strong>
+          <span>Current Favorite</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Football Game Arena — built for quick play, bold goals, and fierce rivalries.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
